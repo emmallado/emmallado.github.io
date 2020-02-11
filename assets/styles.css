@@ -198,6 +198,7 @@ a {
     margin: 0 5;
     max-width: 70%;
     position: relative;
+    width: 100%;
 }
 
 .column__image::before {
@@ -247,7 +248,31 @@ a {
     color: #fff;
 }
 
+.logo-footer {
+    display: block;
+}
 
+.logo-footer svg {
+    height: 100px;
+    width: 100px;
+}
+
+
+
+
+
+.flex-vert {
+    display: flex;
+    flex-direction: column;
+}
+
+.column-reverse {
+    flex-direction: column-reverse;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
+}
 
 
 
