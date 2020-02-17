@@ -57,7 +57,7 @@ p {
     color:#6C85A6;
     font-size:1.27;
     font-weight:400;
-    line-height: 5;
+    line-height: 2;
 }
 
 a {
@@ -173,10 +173,11 @@ a {
     max-width: 1200px;
     padding: 0 20px;
     position: relative;
+    justify-content: space-between;
 }
 
 .section {
-    padding: 2rem 0;
+    padding: 0 0 0 0;
 }
 
 .subtitle__section {
@@ -201,6 +202,10 @@ a {
     width: 100%;
 }
 
+.column-title {
+    padding: 20px 0 20px 0;
+}
+
 .column__image::before {
     content: '';
     display: block;
@@ -222,21 +227,9 @@ a {
     background-image: url(img/chef.jpg);
 }
 
-.bg-team {
-    background: #000 url(img/speciality-bg.png) 50% no-repeat;
-    background-size: cover;
-}
-
-.titular {
-    text-align: left;
-}
 
 .text-center {
     text-align: center;
-}
-
-.uppercase {
-    text-transform: uppercase;
 }
 
 .big {
