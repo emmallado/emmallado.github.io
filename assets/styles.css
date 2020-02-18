@@ -28,6 +28,7 @@ ul, ol {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display:flex;
 }
 
 h1 {
@@ -112,7 +113,6 @@ a {
 }
 
 .logo svg {
-    height: 150px;
     width: 150px;
 }
 
@@ -122,10 +122,14 @@ a {
     justify-content: space-between;
 }
 
+.navigation__list li:last-child .nav-link {
+    padding-right:0;
+}
+
 .nav-link {
     font-size: 1.27rem;
-    display: block;
-    padding: 20px 40px;
+    display: inline-block;
+    padding: 0px 20px;
     transition: color .30s ease-in-out;
 }
 
@@ -141,7 +145,7 @@ a {
     height: 20px;
 }
 
-.nav-link::after {
+.line::after {
     background: #E5E163;
     content: '';
     display: block;
@@ -151,16 +155,24 @@ a {
     transition: width .15s ease-in-out;
 }
 
-.nav-link:hover {
+.line:hover {
     color:#6C85A6;
 }
 
-.nav-link:hover::after {
-    width: 90px;
+.line:hover::after {
+    width: auto;
 }
 
 .footer {
     background: #F0F5FB;
+}
+
+.footer-left {
+    
+}
+
+.footer-right {
+    text-align: right
 }
 
 .footer__rrss {
@@ -168,15 +180,25 @@ a {
     right: 0;
 }
 
+.footer-link {
+    font-size: 18px;
+    font-weight: 100;
+    color: #4A4B4C;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 30px 20px;
     position: relative;
     justify-content: space-between;
 }
 
 .section {
+    padding: 0 0 0 0;
+}
+
+.proyectos {
     padding: 0 0 0 0;
 }
 
@@ -191,40 +213,8 @@ a {
     flex-direction: row-reverse;
 }
 
-.column__image {
-    background-position: center bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: none;
-    margin: 0 5;
-    max-width: 70%;
-    position: relative;
-    width: 100%;
-}
-
 .column-title {
     padding: 20px 0 20px 0;
-}
-
-.column__image::before {
-    content: '';
-    display: block;
-    padding-bottom: 100%;
-}
-
-.reverse .column__image::after {
-    left: 0;
-    margin-left: -5rem;
-    margin-right: 0;
-    right: initial;
-}
-
-.about-image {
-    background-image: url(img/fire.jpg);
-}
-
-.team-image {
-    background-image: url(img/chef.jpg);
 }
 
 
@@ -276,15 +266,13 @@ a {
 
     .row {
         display: flex;
+        justify-content: space-between;
     }
 
     .column {
-        width: 50%;
+        width: calc(50% - 10px)
     }
 
-    .column__image {
-        display: block;
-    }
 }
 
 
