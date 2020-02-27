@@ -110,10 +110,11 @@ a {
 
 .logo {
     display: block;
+    max-width: 100%;
 }
 
 .logo svg {
-    width: 150px;
+    width: 170px;
 }
 
 .navigation,
@@ -129,8 +130,7 @@ a {
 .nav-link {
     font-size: 1.27rem;
     display: inline-block;
-    padding: 0px 20px;
-    transition: color .30s ease-in-out;
+    padding: 0px 40px;
 }
 
 .social__item {
