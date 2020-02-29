@@ -34,7 +34,7 @@ ul, ol {
 h1 {
     color:#6C85A6;
     font-size: 2.3rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 h2 {
@@ -58,7 +58,7 @@ p {
     color:#6C85A6;
     font-size: 1.16rem;
     font-weight: 400;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 a {
@@ -234,6 +234,18 @@ a {
     width: 100px;
 }
 
+.button {
+    background-color: #fff;
+    color:#6C85A6;
+    border: 2px solid #E5E163;
+    border-radius:6px;
+    padding: 1.5rem;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:1.16rem;
+    font-weight: 400;
+}
 
 
 
@@ -280,9 +292,7 @@ a {
         width: 90%;
     }
 
-    .navigation__list li:last-child .nav-link {
-        padding-right:0;
-    }
+
 }
 
 
