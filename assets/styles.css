@@ -33,13 +33,13 @@ ul, ol {
 
 h1 {
     color:#6C85A6;
-    font-size: 3.7rem;
+    font-size: 2.3rem;
     font-weight: 500;
 }
 
 h2 {
     color:#6C85A6;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.40;
 }
@@ -56,8 +56,8 @@ p {
 
 .body-large {
     color:#6C85A6;
-    font-size:1.27;
-    font-weight:400;
+    font-size: 1.16rem;
+    font-weight: 400;
     line-height: 2;
 }
 
@@ -66,10 +66,6 @@ a {
     font-size: .7rem;
     font-weight:400;
     text-decoration: none;
-}
-
-.share a {
-    color: #B1C6E0;
 }
 
 .header {
@@ -89,7 +85,7 @@ a {
     display: block;
     position: absolute;
     z-index: 0;
-    width: 50%;
+    width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, #fff 0%, #F0F5FB 100%);
     top:0;
@@ -98,7 +94,7 @@ a {
 
 .billboard__content {
     text-align: left;
-    width: 90%;
+    width: 100%;
 }
 
 .billboard__wrapper {
@@ -132,6 +128,7 @@ a {
     display: inline-block;
     margin: 0 2rem;
 }
+
 
 .social__item {
     display: block;
@@ -167,7 +164,7 @@ a {
 }
 
 .footer-right {
-    text-align: right
+    text-align: right;
 }
 
 .footer__rrss {
@@ -245,6 +242,54 @@ a {
 
 
 
+
+
+
+/* min-width: 960px / 16 */
+@media screen and (min-width: 60em) {
+
+    .footer__wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 3.7rem;
+    }
+    
+    h2 {
+        font-size: 2.4rem;
+        line-height: 1.40;
+    }
+    
+    p {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+    
+    .body-large {
+        font-size:1.27rem;
+        line-height: 2;
+    }
+
+    .billboard::before {
+        width: 50%;
+    }
+
+    .billboard__content {
+        width: 90%;
+    }
+
+    .navigation__list li:last-child .nav-link {
+        padding-right:0;
+    }
+}
+
+
+
+
+
+
 /* min-width: 768px / 16 */
 @media screen and (min-width: 48em) {
     .row {
@@ -255,30 +300,26 @@ a {
     .column {
         width: calc(50% - 25px);
     }
-
-.flex-vert {
+    
+    .flex-vert {
     display: flex;
     flex-direction: column;
-}
-
-.column-reverse {
+    }
+    
+    .column-reverse {
     flex-direction: column-reverse;
-}
+    }
 
-.row-reverse {
+    .row-reverse {
     flex-direction: row-reverse;
-}
-
-}
-
-/* min-width: 960px / 16 */
-@media screen and (min-width: 60em) {
-    .footer__wrapper {
-        display: flex;
-        align-items: center;
     }
 
 }
+
+
+
+
+
 
 
 
