@@ -151,10 +151,6 @@ a {
     transition: width .15s ease-in-out;
 }
 
-.line:hover {
-    color:#6C85A6;
-}
-
 .line:hover::after {
     width: 100%;
 }
@@ -174,9 +170,16 @@ a {
 }
 
 .footer-link {
+    display:block;
+    text-decoration:underline;
     font-size: 1rem;
     font-weight: 100;
+    line-height: 2.3rem;
     color: #4A4B4C;
+}
+
+.footer-link:hover {
+    color:#6C85A6;
 }
 
 .wrapper {
@@ -199,7 +202,6 @@ a {
     font-size: 1.27rem;
     font-weight: 400;
     color: #6C85A6;
-    padding: 0 0 20px 0;
 }
 
 .reverse {
@@ -208,11 +210,6 @@ a {
 
 .column-title {
     padding: 20px 0 20px 0;
-}
-
-
-.text-center {
-    text-align: center;
 }
 
 .big {
@@ -240,6 +237,7 @@ a {
     border: 2px solid #E5E163;
     border-radius:6px;
     padding: 1.5rem;
+    margin-top: 2rem;
     text-align:center;
     text-decoration: none;
     display:inline-block;
@@ -287,7 +285,6 @@ a {
     .body-large {
         font-size:1.27rem;
         line-height: 1.9rem;
-        padding-bottom: 2rem;
     }
 
     .billboard::before {
