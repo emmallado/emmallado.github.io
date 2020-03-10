@@ -119,14 +119,15 @@ a {
     justify-content: space-between;
 }
 
-.navigation__list li:last-child .nav-link {
-    padding-right:0;
-}
 
 .nav-link {
     font-size: 1.27rem;
     display: inline-block;
     margin: 0 2rem;
+}
+
+.navigation__list li:last-child .nav-link {
+    padding-right:0;
 }
 
 
@@ -159,23 +160,8 @@ a {
     background: #F0F5FB;
 }
 
-.footer-right {
-    text-align: right;
-}
-
 .footer__rrss {
-    position: relative;
-    right: 0;
     align-items: center;
-}
-
-.footer-link {
-    display:block;
-    text-decoration:underline;
-    font-size: 1rem;
-    font-weight: 100;
-    line-height: 2.3rem;
-    color: #4A4B4C;
 }
 
 .footer-link:hover {
@@ -224,7 +210,7 @@ a {
 .logo-footer {
     display: block;
     max-width: 100%;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .logo-footer svg {
@@ -248,23 +234,62 @@ a {
 .button:hover {
     border: 2px solid #F5F4B8;
     background-color:#F5F4B8;
+    transition: .3s;
 }
 
 
 
 
 
+/* MOBILE / max-width: 479px / 16 */
+@media screen and (max-width: 29.9375em) {
+    .footer__wrapper,
+    .logo-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
+/* IPAD / min-width: 768px / 16 */
+@media screen and (min-width: 48em) {
+    .row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .column {
+        width: calc(50% - 25px);
+    }
+    
+    .flex-vert {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .column-reverse {
+    flex-direction: column-reverse;
+    }
+
+    .row-reverse {
+    flex-direction: row-reverse;
+    }
+
+}
 
 
 
 
-
-/* min-width: 960px / 16 */
+/* DESKTOP / min-width: 960px / 16 */
 @media screen and (min-width: 60em) {
 
     .footer__wrapper {
         display: flex;
         align-items: center;
+        justify-content: space-between;
     }
 
     h1 {
@@ -303,31 +328,8 @@ a {
 
 
 
-/* min-width: 768px / 16 */
-@media screen and (min-width: 48em) {
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
 
-    .column {
-        width: calc(50% - 25px);
-    }
-    
-    .flex-vert {
-    display: flex;
-    flex-direction: column;
-    }
-    
-    .column-reverse {
-    flex-direction: column-reverse;
-    }
 
-    .row-reverse {
-    flex-direction: row-reverse;
-    }
-
-}
 
 
 
