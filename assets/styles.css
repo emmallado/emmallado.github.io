@@ -84,7 +84,7 @@ a {
     position: relative;
 }
 
-.billboard::before {
+.gradient::before {
     content:'';
     display: block;
     position: absolute;
