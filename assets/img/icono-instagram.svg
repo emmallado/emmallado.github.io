@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#B1C6E0;}
+	.st1{fill:none;stroke:#6C85A6;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#6C85A6;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#000000;stroke-width:16;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#000000;stroke-width:16;stroke-linecap:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<path class="st0" d="M256,511.2c-35.5,0-69.9-7.2-102.2-21.3c-31.2-13.7-59-33.2-82.6-57.9C25.8,384.4,0.8,321.9,0.8,256
+		c0-68.2,26.5-132.2,74.8-180.4S187.8,0.8,256,0.8s132.2,26.5,180.4,74.8s74.8,112.3,74.8,180.4s-26.5,132.2-74.8,180.4
+		S324.2,511.2,256,511.2z M256,16.8C124.1,16.8,16.8,124.1,16.8,256c0,61.8,23.4,120.3,66,164.9l0,0c22.1,23.2,48.1,41.5,77.4,54.3
+		c30.3,13.3,62.5,20,95.8,20c131.9,0,239.2-107.3,239.2-239.2S387.9,16.8,256,16.8z"/>
+</g>
+<g>
+	<g>
+		<path class="st0" d="M185.7,399.4c-0.1,0-0.2,0-0.3,0c-40.8-1.6-72.8-34.9-72.8-75.8V188.4c0-41.9,34-75.9,75.9-75.9h135.1
+			c41.9,0,75.9,34,75.9,75.9v135.1c0,41.9-34,75.9-75.9,75.9h-98.7c-4.4,0-8-3.6-8-8s3.6-8,8-8h98.7c33,0,59.9-26.9,59.9-59.9V188.4
+			c0-33-26.9-59.9-59.9-59.9H188.4c-33,0-59.9,26.9-59.9,59.9v135.2c0,32.3,25.2,58.6,57.5,59.9c4.4,0.2,7.9,3.9,7.7,8.3
+			C193.5,396.1,189.9,399.4,185.7,399.4z"/>
+	</g>
+	<g>
+		<path class="st0" d="M256,331.8c-41.8,0-75.8-34-75.8-75.8s34-75.8,75.8-75.8c41.8,0,75.8,34,75.8,75.8S297.8,331.8,256,331.8z
+			 M256,196.2c-33,0-59.8,26.8-59.8,59.8s26.8,59.8,59.8,59.8s59.8-26.8,59.8-59.8S289,196.2,256,196.2z"/>
+	</g>
+	<g>
+		<circle class="st0" cx="336.8" cy="175.7" r="17"/>
+	</g>
+</g>
+</svg>
