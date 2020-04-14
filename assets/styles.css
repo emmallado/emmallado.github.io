@@ -99,12 +99,13 @@ a {
 .billboard__content {
     text-align: left;
     width: 100%;
+    align-items: center;
 }
 
 .billboard__wrapper {
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: center;
     height: 100%;
 }
 
@@ -199,7 +200,7 @@ a {
 }
 
 .column-title {
-    padding: 20px 0 20px 0;
+    margin: 20px 0 20px 0;
 }
 
 .big {
