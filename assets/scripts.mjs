@@ -1,7 +1,7 @@
 AOS.init();
 
 $('.js-menu').on('click', function() {
-    $('html').addClass('menu-open');
+    $('html').toggleClass('menu-open');
 });
 
 $('.js-closeMenu').on('click', function() {

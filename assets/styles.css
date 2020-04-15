@@ -118,6 +118,7 @@ a {
     width: 170px;
 }
 
+
 .navigation,
 .navigation__list {
     display: flex;
@@ -242,6 +243,21 @@ a {
     transition: .3s;
 }
 
+.conoceme__text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.conoceme__column {
+    box-sizing: border-box;
+    overflow: auto;
+    width: calc(50% - 35px);
+}
+
+.intro-bio {
+    max-width: 50%;
+}
+
 
 
 
@@ -324,6 +340,7 @@ a {
     .billboard__content {
         width: 90%;
     }
+
 
 
 }
