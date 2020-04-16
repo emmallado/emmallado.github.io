@@ -148,6 +148,10 @@ a {
     width: 40px;
 }
 
+.social__item:hover{
+    fill:#6C85A6;
+}
+
 .line::after {
     background: #E5E163;
     content: '';
@@ -168,10 +172,6 @@ a {
 
 .footer__rrss {
     align-items: center;
-}
-
-.footer-link:hover {
-    color:#6C85A6;
 }
 
 .wrapper {
@@ -243,9 +243,15 @@ a {
     transition: .3s;
 }
 
+.img-conoceme {
+    margin-top: 70px;
+    width: 900px;
+}
+
 .conoceme__text {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 60px;
 }
 
 .conoceme__column {
@@ -256,6 +262,7 @@ a {
 
 .intro-bio {
     max-width: 50%;
+    margin-bottom:40px;
 }
 
 
@@ -311,11 +318,12 @@ a {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 70px 20px;
     }
 
     h1 {
         font-size: 3.7rem;
-        line-height: 7rem;
+        margin-bottom: 30px;
     }
     
     h2 {
@@ -326,6 +334,7 @@ a {
     p {
         font-size: 1rem;
         line-height: 1.5;
+        margin-bottom: 25px;
     }
     
     .body-large {
@@ -340,6 +349,7 @@ a {
     .billboard__content {
         width: 90%;
     }
+
 
 
 
