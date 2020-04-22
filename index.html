@@ -27,7 +27,7 @@
 
 
                     <ul class="navigation__list">
-                        <li><a class="nav-link line" href="#proyectos" class="js-anchor">Proyectos</a></li>
+                        <li><a class="nav-link line js-anchor" href="#proyectos">Proyectos</a></li>
                         <li><a class="nav-link line" href="conoceme.html">Conóceme</a></li>
                         <li><a class="nav-link line" href="contacto.html">Contacto</a></li>
                     </ul>
@@ -171,7 +171,7 @@
                 $('html').toggleClass('menu-open');
             });
 
-            $('js-anchor').on('click', function() {
+            $('.js-anchor').on('click', function() {
                 var target = $(this).attr('href');
 
                 $('html').removeClass('menu-open');

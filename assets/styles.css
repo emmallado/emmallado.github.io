@@ -121,8 +121,12 @@ a {
 
 .navigation,
 .navigation__list {
-    display: flex;
+    display: none;
     justify-content: space-between;
+}
+
+.menu-open .navigation__list {
+    display: block;
 }
 
 
@@ -304,6 +308,12 @@ a {
 
     .row-reverse {
     flex-direction: row-reverse;
+    }
+    
+    .navigation,
+    .navigation__list {
+    display: flex;
+    justify-content: space-between;
     }
 
 }
