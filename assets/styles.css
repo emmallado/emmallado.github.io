@@ -84,6 +84,14 @@ a {
     position: relative;
 }
 
+.img-cover {
+    height: 100vh;
+    position: relative;
+    background: "../assets/img/tuandco/principal-tuandco.jpg" 50% no-repeat;
+    background-size: cover;
+    height: calc(100vh - 4rem);
+}
+
 .gradient::before {
     content:'';
     display: block;
