@@ -35,6 +35,7 @@ h1 {
     color:#6C85A6;
     font-size: 2.3rem;
     font-weight: 400;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -117,20 +118,24 @@ a {
     height: 100%;
 }
 
-.logo {
-    display: block;
-    max-width: 100%;
-}
-
-.logo svg {
-    width: 170px;
-}
-
-
-.navigation,
+.navigation
 .navigation__list {
     display: none;
     justify-content: space-between;
+}
+
+.menu_icon {
+    display: block;
+    justify-content: right;
+}
+
+.logo {
+    display: none;
+}
+
+.logo-mobile {
+    display:block;
+    max-width:10%;
 }
 
 .menu-open .navigation__list {
@@ -317,11 +322,22 @@ a {
     .row-reverse {
     flex-direction: row-reverse;
     }
+
+    .logo-mobile {
+        display:none;
+    }
+
+    .logo {
+        display: block;
+        max-width:100%;
+    }
     
-    .navigation,
-    .navigation__list {
-    display: flex;
-    justify-content: space-between;
+    .logo svg {
+        width: 170px;
+    }
+
+    .menu_icon {
+        display: none;
     }
 
 }
@@ -368,10 +384,18 @@ a {
         width: 90%;
     }
 
-
-
-
+    .navigation
+    .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    }
+    
 }
+
+
+
+
+
 
 
 
