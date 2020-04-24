@@ -31,6 +31,23 @@ ul, ol {
     display:flex;
 }
 
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px 20px;
+    position: relative;
+    justify-content: space-between;
+}
+
+.section {
+    padding: 0 0 0 0;
+}
+
+
+/* MOBILE / min-width: 479px / 16 */
+
+/*Tipografia*/
+
 h1 {
     color:#6C85A6;
     font-size: 2.3rem;
@@ -66,6 +83,9 @@ p {
     color: #4A4B4C;
 }
 
+
+/*Buttons*/
+
 a {
     color:#6C85A6;
     font-size: .7rem;
@@ -73,49 +93,34 @@ a {
     text-decoration: none;
 }
 
+.button {
+    background-color: #fff;
+    color:#6C85A6;
+    border: 2px solid #E5E163;
+    border-radius:6px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align:center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:1.16rem;
+    font-weight: 400;
+}
+
+.button:hover {
+    border: 2px solid #F5F4B8;
+    background-color:#F5F4B8;
+    transition: .3s;
+}
+
+
+/*Header*/
+
 .header {
     padding: 1rem 0;
     position: fixed;
     width: 100%;
     z-index: 1;
-}
-
-.billboard {
-    height: 100vh;
-    position: relative;
-}
-
-.img-cover {
-    height: 100vh;
-    position: relative;
-    background: "../assets/img/tuandco/principal-tuandco.jpg" 50% no-repeat;
-    background-size: cover;
-    height: calc(100vh - 4rem);
-}
-
-.gradient::before {
-    content:'';
-    display: block;
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, #fff 0%, #F0F5FB 100%);
-    top:0;
-    right:0;
-}
-
-.billboard__content {
-    text-align: left;
-    width: 100%;
-    align-items: center;
-}
-
-.billboard__wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
 }
 
 .navigation
@@ -153,6 +158,51 @@ a {
     padding-right:0;
 }
 
+.line::after {
+    background: #E5E163;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 10px auto 0;
+    width: 0;
+    transition: width .15s ease-in-out;
+}
+
+.line:hover::after {
+    width: 100%;
+}
+
+
+/*Billboard*/
+
+.billboard {
+    height: 100vh;
+    position: relative;
+}
+
+.billboard-tuandco {
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+    background: url(../assets/img/tuandco/principal-tuandco.jpg) no-repeat #B1C6E0;
+    background-size:contain;
+}
+
+.billboard__content {
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+
+.billboard__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+
+
+/*Footer*/
 
 .social__item {
     display: block;
@@ -169,20 +219,6 @@ a {
     fill:#6C85A6;
 }
 
-.line::after {
-    background: #E5E163;
-    content: '';
-    display: block;
-    height: 2px;
-    margin: 10px auto 0;
-    width: 0;
-    transition: width .15s ease-in-out;
-}
-
-.line:hover::after {
-    width: 100%;
-}
-
 .footer {
     background: #F0F5FB;
 }
@@ -191,20 +227,33 @@ a {
     align-items: center;
 }
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 30px 20px;
-    position: relative;
-    justify-content: space-between;
+.logo-footer {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 1rem;
 }
 
-.section {
-    padding: 0 0 0 0;
+.logo-footer svg {
+    width: 100px;
 }
+
+
+/*Home-proyectos*/
 
 .proyectos {
     padding: 0 0 0 0;
+}
+
+.gradient::before {
+    content:'';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #fff 0%, #F0F5FB 100%);
+    top:0;
+    right:0;
 }
 
 .subtitle__section {
@@ -221,44 +270,8 @@ a {
     margin: 20px 0 20px 0;
 }
 
-.big {
-    font-size: 1.35rem;
-    font-weight: 700;
-}
 
-.text-white {
-    color: #fff;
-}
-
-.logo-footer {
-    display: block;
-    max-width: 100%;
-    margin-bottom: 1rem;
-}
-
-.logo-footer svg {
-    width: 100px;
-}
-
-.button {
-    background-color: #fff;
-    color:#6C85A6;
-    border: 2px solid #E5E163;
-    border-radius:6px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    text-align:center;
-    text-decoration: none;
-    display:inline-block;
-    font-size:1.16rem;
-    font-weight: 400;
-}
-
-.button:hover {
-    border: 2px solid #F5F4B8;
-    background-color:#F5F4B8;
-    transition: .3s;
-}
+/*Conoceme*/
 
 .img-conoceme {
     margin-top: 70px;
@@ -288,6 +301,9 @@ a {
 
 /* MOBILE / max-width: 479px / 16 */
 @media screen and (max-width: 29.9375em) {
+
+    /*Footer*/
+
     .footer__wrapper,
     .logo-footer {
         display: flex;
@@ -301,6 +317,9 @@ a {
 
 /* IPAD / min-width: 768px / 16 */
 @media screen and (min-width: 48em) {
+
+    /*Home-proyectos*/
+
     .row {
         display: flex;
         justify-content: space-between;
@@ -323,6 +342,9 @@ a {
     flex-direction: row-reverse;
     }
 
+
+    /*Header???*/
+
     .logo-mobile {
         display:none;
     }
@@ -331,7 +353,7 @@ a {
         display: block;
         max-width:100%;
     }
-    
+
     .logo svg {
         width: 170px;
     }
@@ -348,12 +370,7 @@ a {
 /* DESKTOP / min-width: 960px / 16 */
 @media screen and (min-width: 60em) {
 
-    .footer__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 70px 20px;
-    }
+    /*Tipografia*/
 
     h1 {
         font-size: 3.7rem;
@@ -376,6 +393,18 @@ a {
         line-height: 1.9rem;
     }
 
+
+    /*Header*/
+
+    .navigation
+    .navigation__list {
+    display: flex;
+    justify-content: space-between;
+    }
+
+
+    /*Billboard*/
+
     .billboard::before {
         width: 50%;
     }
@@ -384,10 +413,14 @@ a {
         width: 90%;
     }
 
-    .navigation
-    .navigation__list {
-    display: flex;
-    justify-content: space-between;
+
+    /*Footer*/
+
+    .footer__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 20px;
     }
     
 }
