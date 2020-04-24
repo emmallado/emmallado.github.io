@@ -43,6 +43,11 @@ ul, ol {
     padding: 0 0 0 0;
 }
 
+.center {
+    justify-content:center;
+    align-items:center;
+}
+
 
 /* MOBILE / min-width: 479px / 16 */
 
@@ -99,7 +104,7 @@ a {
     border: 2px solid #E5E163;
     border-radius:6px;
     padding: 1.5rem;
-    margin-top: 2rem;
+    margin: 1rem;
     text-align:center;
     text-decoration: none;
     display:inline-block;
@@ -112,6 +117,17 @@ a {
     background-color:#F5F4B8;
     transition: .3s;
 }
+
+.arrow-right{
+  display: inline-block;
+  margin: 0 5px 0 0;
+  width: 15px;
+  height: 15px;
+  border-top: 2px solid #6C85A6;
+  border-left: 2px solid #6C85A6;
+  transform: rotate(135deg);
+}
+
 
 
 /*Header*/
@@ -184,8 +200,9 @@ a {
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: url(../assets/img/tuandco/principal-tuandco.jpg) no-repeat #B1C6E0;
+    background: url(../assets/img/tuandco/principal-tuandco-hd.jpg) no-repeat #F8F9FB;
     background-size:contain;
+    background-position:center;
 }
 
 .billboard__content {
@@ -271,6 +288,13 @@ a {
 }
 
 
+/*Paginas proyectos*/
+
+.proyectos-list {
+    display:block;
+}
+
+
 /*Conoceme*/
 
 .img-conoceme {
@@ -282,12 +306,6 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
-}
-
-.conoceme__column {
-    box-sizing: border-box;
-    overflow: auto;
-    width: calc(50% - 35px);
 }
 
 .intro-bio {
@@ -343,7 +361,7 @@ a {
     }
 
 
-    /*Header???*/
+    /*Header*/
 
     .logo-mobile {
         display:none;
@@ -356,10 +374,6 @@ a {
 
     .logo svg {
         width: 170px;
-    }
-
-    .menu_icon {
-        display: none;
     }
 
 }
@@ -412,7 +426,6 @@ a {
     .billboard__content {
         width: 90%;
     }
-
 
     /*Footer*/
 
