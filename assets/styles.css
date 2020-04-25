@@ -24,8 +24,8 @@ svg {
     display: block;
 }
 
-ul, ol {
-    list-style-type: none;
+ul{
+    list-style: none;
     margin: 0;
     padding: 0;
     display:flex;
@@ -46,6 +46,31 @@ ul, ol {
 .center {
     justify-content:center;
     align-items:center;
+}
+
+/*Header all*/
+
+.header {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    background: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 30px 20px;
+}
+
+.logo {
+    max-height: 30px;
+    min-height: 30px;
+    height: 10%;
+}
+
+.desktop {
+    display: none;
 }
 
 
@@ -132,60 +157,19 @@ a {
 
 /*Header*/
 
-.header {
-    padding: 1rem 0;
+.navigation {
+    background: darkgreen;
+    height: 100vh;
+    padding: 20px;
     position: fixed;
+    top: 0;
+    left: 100%;
     width: 100%;
-    z-index: 1;
+    transition: left 300ms ease-in-out;
 }
 
-.navigation
-.navigation__list {
-    display: none;
-    justify-content: space-between;
-}
-
-.menu_icon {
-    display: block;
-    justify-content: right;
-}
-
-.logo {
-    display: none;
-}
-
-.logo-mobile {
-    display:block;
-    max-width:10%;
-}
-
-.menu-open .navigation__list {
-    display: block;
-}
-
-
-.nav-link {
-    font-size: 1.27rem;
-    display: inline-block;
-    margin: 0 2rem;
-}
-
-.navigation__list li:last-child .nav-link {
-    padding-right:0;
-}
-
-.line::after {
-    background: #E5E163;
-    content: '';
-    display: block;
-    height: 2px;
-    margin: 10px auto 0;
-    width: 0;
-    transition: width .15s ease-in-out;
-}
-
-.line:hover::after {
-    width: 100%;
+.menu-open .navigation {
+    left: 0;
 }
 
 
@@ -363,18 +347,7 @@ a {
 
     /*Header*/
 
-    .logo-mobile {
-        display:none;
-    }
 
-    .logo {
-        display: block;
-        max-width:100%;
-    }
-
-    .logo svg {
-        width: 170px;
-    }
 
 }
 
@@ -410,10 +383,45 @@ a {
 
     /*Header*/
 
-    .navigation
+
+    .burguer,
+    .mobile,
+    .navigation__close {
+      display: none;
+    }
+  
+    .desktop {
+      display: block;
+    }
+  
     .navigation__list {
-    display: flex;
-    justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
+  
+    .navigation__link {
+        font-size: 1.27rem;
+        display: inline-block;
+        margin: 0 2rem;
+        padding: 0 10px;
+    }
+
+    .navigation .navigation__list .navigation__link li:last-child {
+        padding-right:0;
+    }
+    
+    .line::after {
+        background: #E5E163;
+        content: '';
+        display: block;
+        height: 2px;
+        margin: 10px auto 0;
+        width: 0;
+        transition: width .15s ease-in-out;
+    }
+    
+    .line:hover::after {
+        width: 100%;
     }
 
 
