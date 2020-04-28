@@ -51,23 +51,21 @@ ul{
 /*Header all*/
 
 .header {
-    position: relative;
+    position: fixed;
     width: 100%;
     z-index: 1;
     align-items: center;
-    background: aquamarine;
+    background:aqua;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1200px;
     padding: 30px 20px;
 }
 
 .logo {
-    max-height: 30px;
-    min-height: 30px;
-    height: 10%;
+    height: 30px;
 }
+
 
 .desktop {
     display: none;
@@ -155,17 +153,6 @@ a {
 
 /*Header*/
 
-.navigation {
-    background: darkgreen;
-    height: 100vh;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 100%;
-    width: 100%;
-    transition: left 300ms ease-in-out;
-}
-
 .menu-open .navigation {
     left: 0;
 }
@@ -210,12 +197,16 @@ a {
 }
 
 .social__item svg {
-    fill:#B1C6E0;
     width: 40px;
 }
-
-.social__item:hover{
+.social__item svg path,
+.social__item svg circle {
+    fill:#B1C6E0;
+}
+.social__item:hover svg path,
+.social__item:hover svg circle {
     fill:#6C85A6;
+    transition: .10s;
 }
 
 .footer {
@@ -308,6 +299,18 @@ a {
     }
 }
 
+@media screen and (max-width: 59.9375em) {
+    .navigation {
+        background: white;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 100%;
+        width: 100%;
+        transition: left 300ms ease-in-out;
+    }
+}
 
 
 /* IPAD / min-width: 768px / 16 */
@@ -377,7 +380,7 @@ a {
     /*Header*/
 
 
-    .burguer,
+    .burger,
     .mobile,
     .navigation__close {
       display: none;
