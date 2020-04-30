@@ -55,21 +55,21 @@ ul{
     width: 100%;
     z-index: 1;
     align-items: center;
-    background:aqua;
+    background:white;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-.logo {
-    height: 30px;
+.logo svg {
+    height: 2rem;
 }
 
 
-.desktop {
-    display: none;
-}
+
+
+
 
 
 /* MOBILE / min-width: 479px / 16 */
@@ -157,6 +157,14 @@ a {
     left: 0;
 }
 
+.mobile {
+    display: block;
+}
+
+.desktop {
+    display: none;
+}
+
 
 /*Billboard*/
 
@@ -241,7 +249,7 @@ a {
     z-index: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #fff 0%, #F0F5FB 100%);
+    background: linear-gradient(to bottom, #fff 5%, #F0F5FB 100%);
     top:0;
     right:0;
 }
@@ -300,6 +308,9 @@ a {
 }
 
 @media screen and (max-width: 59.9375em) {
+
+    /*Menu responsive*/
+
     .navigation {
         background: white;
         height: 100vh;
@@ -309,6 +320,41 @@ a {
         left: 100%;
         width: 100%;
         transition: left 300ms ease-in-out;
+    }
+
+    .mobile {
+        display:block;
+    }
+
+    .navigation__list {
+        display: block;
+        align-items: center;
+    }
+    
+    .navigation__link {
+        font-size: 1.8rem;
+        display: inline-block;
+        margin: 0 2rem;
+        padding: 30px 10px;
+    }
+
+    .line::after {
+        background: #E5E163;
+        content: '';
+        display: block;
+        height: 2.7px;
+        margin: 10px auto 0;
+        width: 0;
+        transition: width .15s ease-in-out;
+    }
+    
+    .line:hover::after {
+        width: 100%;
+    }
+
+    .navigation__close {
+        display: flex;
+        justify-content:flex-end;
     }
 }
 
@@ -405,7 +451,7 @@ a {
     .navigation .navigation__list .navigation__link li:last-child {
         padding-right:0;
     }
-    
+
     .line::after {
         background: #E5E163;
         content: '';
