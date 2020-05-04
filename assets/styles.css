@@ -80,7 +80,8 @@ h1 {
     color:#6C85A6;
     font-size: 2.3rem;
     font-weight: 400;
-    margin-bottom: 0.5rem;
+    line-height:2rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
@@ -141,9 +142,9 @@ a {
 
 .arrow-right{
   display: inline-block;
-  margin: 0 5px 0 0;
-  width: 15px;
-  height: 15px;
+  margin: 0 5px 0 20px;
+  width: 0.7rem;
+  height: 0.7rem;
   border-top: 2px solid #6C85A6;
   border-left: 2px solid #6C85A6;
   transform: rotate(135deg);
@@ -177,14 +178,15 @@ a {
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: url(../assets/img/tuandco/principal-tuandco-hd.jpg) no-repeat #F8F9FB;
-    background-size:cover;
+    background: url(../assets/img/tuandco/principal-tuandco-hd-m.jpg) no-repeat #F8F9FB;
+    background-size:contain;
     background-position:center;
 }
 
 .billboard__content {
     text-align: left;
     width: 100%;
+    height: auto;
     align-items: center;
 }
 
@@ -223,12 +225,13 @@ a {
 
 .footer__rrss {
     align-items: center;
+    margin: 1rem 0 0 0;
 }
 
 .logo-footer {
     display: block;
     max-width: 100%;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
 }
 
 .logo-footer svg {
@@ -386,9 +389,31 @@ a {
     flex-direction: row-reverse;
     }
 
+    /*Footer*/
+
+    .footer__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 70px 20px;
+    }
+
+    .logo-footer {
+        margin-top:0.5rem;
+    }
+
 
     /*Header*/
 
+
+    .billboard-tuandco {
+        height: 100vh;
+        position: relative;
+        overflow:hidden;
+        background: url(../assets/img/tuandco/principal-tuandco-hd.jpg) no-repeat #F8F9FB;
+        background-size:contain;
+        background-position:center;
+    }
 
 
 }
@@ -403,7 +428,7 @@ a {
 
     h1 {
         font-size: 3.7rem;
-        margin-bottom: 30px;
+        margin-bottom: 1.5rem;
     }
     
     h2 {
@@ -466,13 +491,14 @@ a {
         width: 100%;
     }
 
+    .line:active::after {
+        width: 100%;
+    }
+
 
     /*Billboard*/
 
-    .billboard-tuandco {
-        background-size:contain;
-        background-position:center;
-    }
+
 
     .billboard::before {
         width: 50%;
@@ -482,14 +508,6 @@ a {
         width: 90%;
     }
 
-    /*Footer*/
-
-    .footer__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 70px 20px;
-    }
     
 }
 
