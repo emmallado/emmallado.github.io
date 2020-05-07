@@ -42,10 +42,17 @@ ul{
 .center {
     justify-content:center;
     align-items:center;
+    text-align:center;
 }
 
 .title__proyecto {
     margin: 1rem 0 3rem 0;
+}
+
+.text-strong {
+    color:#BFBB39;
+    font-weight:400;
+    background: #F5F4B8;
 }
 
 /*Header all*/
@@ -56,7 +63,6 @@ ul{
     z-index: 1;
     align-items: center;
     background:white;
-    display: flex;
     justify-content: space-between;
     margin: 0 auto;
     padding: 30px 20px;
@@ -288,6 +294,7 @@ a {
 
 .conoceme__wrapper {
     display: flex;
+    justify-content:space-between;
     flex-direction:column;
     align-items:center;
     margin-bottom: 1rem;
@@ -308,6 +315,14 @@ a {
         align-items: center;
         justify-content: center;
     }
+
+
+    /*Header*/
+
+    .wrapper__header{
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 59.9375em) {
@@ -318,11 +333,13 @@ a {
         background: white;
         height: 100vh;
         padding: 20px;
+        display:flex;
         position: fixed;
         top: 0;
         left: 100%;
         width: 100%;
         transition: left 300ms ease-in-out;
+        text-align: center;
     }
 
     .mobile {
@@ -332,6 +349,7 @@ a {
     .navigation__list {
         display: block;
         align-items: center;
+        margin:auto;
     }
     
     .navigation__link {
@@ -356,8 +374,11 @@ a {
     }
 
     .navigation__close {
-        display: flex;
         justify-content:flex-end;
+        position:absolute;
+        margin-left:75%;
+        margin-top: 2rem;
+        margin-right: 5rem;
     }
 }
 
@@ -405,6 +426,19 @@ a {
 
     /*Header*/
 
+    .navigation__close {
+        justify-content:flex-end;
+        position:absolute;
+        margin-left:90%;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    .wrapper__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 
     .billboard-tuandco {
         height: 100vh;
@@ -461,6 +495,11 @@ a {
       display: block;
     }
   
+    .navigation {
+        display:flex;
+        justify-content:flex-end;
+    }
+
     .navigation__list {
       display: flex;
       align-items: center;
