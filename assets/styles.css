@@ -43,6 +43,7 @@ ul{
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding-bottom:2.5rem;
 }
 
 .title__proyecto {
@@ -72,10 +73,7 @@ ul{
     height: 2rem;
 }
 
-.three-columns {
-    display:flex;
-    justify-content:center;
-}
+
 
 
 
@@ -295,17 +293,12 @@ a {
     padding-left: 1rem;
 }
 
-.column__small {
-    padding:0 2rem;
-}
-
 
 /*Conoceme*/
 
-
-
-
-
+.column {
+    padding-top:1.5rem;
+}
 
 
 
@@ -336,8 +329,6 @@ a {
 
 
     /*Header*/
-
-
 
 
 }
@@ -412,6 +403,9 @@ a {
         align-items: center;
         justify-content: center;
     }
+
+
+
 }
 
 
@@ -427,6 +421,7 @@ a {
 
     .column {
         width: calc(50% - 25px);
+        padding-top:1rem;
     }
     
     .flex-vert {
@@ -495,6 +490,15 @@ a {
     }
 
 
+    .three-columns {
+        display:flex;
+        justify-content:center;
+    }
+
+    .column__small {
+        padding:0 2rem;
+    }
+
 }
 
 
@@ -557,7 +561,7 @@ a {
         padding: 0 10px;
     }
 
-    .navigation .navigation__list .navigation__link li:last-child {
+    .navigation__link li:last-child {
         padding-right:0;
     }
 

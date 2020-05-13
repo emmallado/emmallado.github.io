@@ -7,3 +7,11 @@ $(document).ready(function () {
       $('html').removeClass('menu-open');
     });
 });
+
+$('.js-anchor').on('click', function(event){
+  event.preventDefault();
+  var target= $(this).attr('href');
+  $('html, body').animate({
+    scrollTop: $(target).offset().top
+  });
+});
