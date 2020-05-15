@@ -157,16 +157,6 @@ a {
     transition: .3s;
 }
 
-.arrow-right{
-  display: inline-block;
-  margin: 0 5px 0 20px;
-  width: 0.7rem;
-  height: 0.7rem;
-  border-top: 2px solid #6C85A6;
-  border-left: 2px solid #6C85A6;
-  transform: rotate(135deg);
-}
-
 
 
 
@@ -205,7 +195,7 @@ a {
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: url(../assets/img/epoc/principal-epoc-hd.jpg) no-repeat #F8F9FB;
+    background: url(../assets/img/epoc/principal-epoc-hd-m.jpg) no-repeat #F8F9FB;
     background-size:contain;
     background-position:center;
 }
