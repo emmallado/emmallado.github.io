@@ -255,13 +255,20 @@ a {
 
 .social__item {
     display: block;
-    padding: 5px;
-    margin: 5px;
 }
 
 .social__item svg {
     width: 40px;
 }
+
+.footer__rrss li {
+    padding: .5rem;
+}
+
+.footer__rrss li:last-child {
+    padding-right: 0;
+}
+
 .social__item svg path,
 .social__item svg circle {
     fill:#B1C6E0;
@@ -347,7 +354,6 @@ a {
 
 .two-columns {
     display:flex;
-    justify-content:center;
 }
 
 .three-columns {
@@ -427,8 +433,7 @@ a {
     .navigation__link {
         font-size: 1.8rem;
         display: inline-block;
-        margin: 0 2rem;
-        padding: 30px 10px;
+        padding: 30px 0;
     }
 
     .line::after {
@@ -491,7 +496,7 @@ a {
 
     .column {
         width: calc(50% - 25px);
-        padding-top:1rem;
+        padding-top: 0;
     }
     
     .flex-vert {
@@ -599,6 +604,10 @@ a {
     .column__small {
         padding:0 2rem;
     }
+
+    .two-columns {
+        justify-content:center;
+    }
 }
 
 
@@ -657,11 +666,13 @@ a {
     .navigation__link {
         font-size: 1.27rem;
         display: inline-block;
-        margin: 0 2rem;
-        padding: 0 10px;
     }
 
-    .navigation__list li:last-child .navigation__link .line {
+    .navigation__list li {
+        padding: 0 2rem;
+    }
+
+    .navigation__list li:last-child {
         padding-right:0;
     }
 
@@ -679,7 +690,7 @@ a {
         width: 100%;
     }
 
-    .line:active::after {
+    .line.active::after {
         width: 100%;
     }
 
