@@ -251,6 +251,24 @@ a {
     background-position:center;
 }
 
+.billboard-emochi {
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+    background: url(../assets/img/space-travel/principal-space-travel-hd-m.jpg) no-repeat #F8F9FB;
+    background-size:contain;
+    background-position:center;
+}
+
+.billboard-rupta {
+    height: 100vh;
+    position: relative;
+    overflow:hidden;
+    background: url(../assets/img/space-travel/principal-space-travel-hd-m.jpg) no-repeat #F8F9FB;
+    background-size:contain;
+    background-position:center;
+}
+
 .billboard__content {
     text-align: left;
     width: 100%;
@@ -685,6 +703,24 @@ a {
     }
 
     .billboard-space-travel {
+        height: 100vh;
+        position: relative;
+        overflow:hidden;
+        background: url(../assets/img/space-travel/principal-space-travel-hd.jpg) no-repeat #F8F9FB;
+        background-size:contain;
+        background-position:center;
+    }
+
+    .billboard-emochi {
+        height: 100vh;
+        position: relative;
+        overflow:hidden;
+        background: url(../assets/img/emochi/principal-emochi-hd.jpg) no-repeat #F8F9FB;
+        background-size:contain;
+        background-position:center;
+    }
+
+    .billboard-rupta {
         height: 100vh;
         position: relative;
         overflow:hidden;
