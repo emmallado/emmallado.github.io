@@ -23,6 +23,11 @@ body, h1, h2, p {
     margin: 0;
 }
 
+video {
+    width: 100% !important;
+    height: auto !important;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -255,7 +260,7 @@ a {
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: url(../assets/img/space-travel/principal-space-travel-hd-m.jpg) no-repeat #F8F9FB;
+    background: url(../assets/img/emochi/principal-emochi-hd-m.jpg) no-repeat #F8F9FB;
     background-size:contain;
     background-position:center;
 }
