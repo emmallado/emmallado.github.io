@@ -269,7 +269,7 @@ a {
     height: 100vh;
     position: relative;
     overflow:hidden;
-    background: url(../assets/img/space-travel/principal-space-travel-hd-m.jpg) no-repeat #F8F9FB;
+    background: url(../assets/img/rupta/principal-rupta-hd-m.jpg) no-repeat #F8F9FB;
     background-size:contain;
     background-position:center;
 }
@@ -729,7 +729,7 @@ a {
         height: 100vh;
         position: relative;
         overflow:hidden;
-        background: url(../assets/img/space-travel/principal-space-travel-hd.jpg) no-repeat #F8F9FB;
+        background: url(../assets/img/rupta/principal-rupta-hd.jpg) no-repeat #F8F9FB;
         background-size:contain;
         background-position:center;
     }
