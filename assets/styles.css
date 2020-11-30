@@ -87,6 +87,15 @@ ul{
     background: #F9F8DC;
 }
 
+.image {
+    transition:1s;
+}
+
+.image:hover {
+    background-size:150%;
+    background-position:center;
+}
+
 /*Header all*/
 
 .header {
@@ -101,7 +110,7 @@ ul{
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0 auto;
-    padding: 30px 20px;
+    padding: 20px 20px;
 }
 
 .logo svg {
@@ -322,10 +331,6 @@ a {
     padding: .5rem;
 }
 
-.footer__rrss li:last-child {
-    padding-right: 0;
-}
-
 .social__item svg path,
 .social__item svg circle {
     fill:#B1C6E0;
@@ -345,13 +350,13 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1rem 0 0 0;
+    margin: 0.3rem 0;
 }
 
 .logo-footer {
     display: block;
     max-width: 100%;
-    margin: 1rem 0;
+    margin: 0 0 0.8rem 0;
 }
 
 .logo-footer svg {
@@ -543,15 +548,15 @@ a {
             -ms-flex-pack:end;
                 justify-content:flex-end;
         position:absolute;
-        margin-left:75%;
-        margin-top: 2rem;
-        margin-right: 5rem;
+        margin-left:80%;
+        margin-top: 0;
+        margin-right: 1rem;
     }
 
     .wrapper__header {
         margin: 0 auto;
         max-width: 1200px;
-        padding: 10px 20px;
+        padding: 0px;
         position:relative;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -644,7 +649,7 @@ a {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        padding: 70px 20px;
+        padding: 35px 20px;
     }
 
     .logo-footer {
